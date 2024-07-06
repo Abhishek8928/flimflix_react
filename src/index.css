@@ -4,7 +4,8 @@
 
 
 *{
-    box-sizing: border-box;
+    box-sizing: border-box !important;
+    
 }
 ::-webkit-scrollbar{
     display: none;

@@ -26,7 +26,7 @@ export default function HorizontalCard({ handler, trending }) {
 				<div className="mt-6 gap-4 flex overflow-x-auto">
 					{trending.map((item,index) => (
 						<>
-							<Link key={index || item?.id} to={`/${item?.media_type}/${item?.id}`} className="  w-[20%] flex-shrink-0  rounded-t">
+							<Link key={index } to={`/${item?.media_type}/${item?.id}`} className="  w-[20%] flex-shrink-0  rounded-t">
 
 								<div className="w-full rounded-t overflow-hidden ">
 									<img className="w-full "

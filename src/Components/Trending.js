@@ -79,7 +79,7 @@ function Trending() {
 						dataLength={trending.length}
 						next={getTrending}
 					>
-						<Cards data={trending} />
+						<Cards type={null} data={trending} />
 					</InfiniteScroll>
 				</div>
 			</div>

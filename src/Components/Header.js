@@ -25,7 +25,7 @@ function Header({ randomWallpaper }) {
 				</h2>
 				<p className="  w-1/2 py-4 text-justify text-zinc-400">
 					{randomWallpaper?.overview.slice(0, 200)}...
-					<Link className="text-blue-400">more</Link>
+					<Link to={`${randomWallpaper.media_type}/${randomWallpaper.id}`} className="text-blue-400">more</Link>
 				</p>
 
 				<div className="text-zinc-400 flex text-base justify-start gap-4 mb-6">

@@ -75,7 +75,7 @@ function Movies() {
                         dataLength={movies.length}
                         next={getMovies}
                     >
-                        <Cards data={movies} />
+                        <Cards type="movie"  data={movies} />
                     </InfiniteScroll>
                 </div>
             </div>

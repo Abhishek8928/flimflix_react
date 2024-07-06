@@ -80,7 +80,7 @@ function Popular() {
 						dataLength={popular.length}
 						next={getpopular}
 					>
-						<Cards data={popular} />
+						<Cards type={popularCategory.toLowerCase()} data={popular} />
 					</InfiniteScroll>
 				</div>
 			</div>

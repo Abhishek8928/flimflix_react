@@ -7,14 +7,14 @@ import noImage from "../img/noImage.jpg"
 
 function SeasonCard({ data }) {
     return (
-        <div className='flex flex-row flex-wrap justify-start gap-4 items-center'>
+        <div className='flex flex-row overflow-x-scroll justify-start gap-4 items-center'>
             {
 
                 data?.map((item, index) => {
                     
 
                     return (
-                        <div className='w-[22%] mb-8' key={item?.id || index} >
+                        <div className='w-[22%] flex-shrink-0 mb-8' key={item?.id || index} >
 
                            
 

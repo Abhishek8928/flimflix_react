@@ -7,13 +7,16 @@ import noImage from "../img/noImage.jpg"
 function SimilarRecom({data}) {
     
     const {pathname}  = useLocation();
+    
   return (
 
             <div className='flex justify-start gap-4 overflow-x-scroll '>
+            
+            
                 {
                     data?.map((item, index) => (
 
-                        <Link className='w-60 flex-shrink-0' key={item?.id || index} to={`/${item.media_type ? "movie" : "tv"}/${item?.id}`}>
+                        <Link className='w-60 flex-shrink-0' key={item?.id || index} to={`/${item.media_type === "tv" ? "tv" : "movie"}/${item?.id}`}>
 
                             <div className='w-full mb-4'>
 

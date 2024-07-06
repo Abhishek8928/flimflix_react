@@ -5,14 +5,17 @@ import { IMAGE_CDN_URL } from '../Utils/constant'
 import { Link } from 'react-router-dom'
 import noImage from "../img/noImage.jpg"
 
-function Cards({data}) {
+function Cards({data ,type}) {
   return (
     <div className='flex flex-row flex-wrap justify-between items-center'>
       {
               
               data?.map((item,index)=>{
+                
+               
+                
                 return (
-      <Link className='w-[22%]' key={item?.id || index} to={`/${item.media_type || 'tv'}/${item?.id}`}>
+      <Link className='w-[22%]' key={item?.id || index} to={`/${item.media_type || type}/${item?.id}`}>
 
         <div className='w-full mb-4'>
 

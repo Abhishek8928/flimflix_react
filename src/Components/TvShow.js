@@ -77,7 +77,7 @@ function TvShows() {
                         dataLength={tvShow.length}
                         next={getTvShow}
                     >
-                        <Cards data={tvShow} />
+                        <Cards type="tv" data={tvShow} />
                     </InfiniteScroll>
                 </div>
             </div>
